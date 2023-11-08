@@ -17,8 +17,7 @@ address {
 
 .overlay {
   position: absolute;
-  top: 0;
-  left: 0;
+  inset: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
@@ -93,7 +92,7 @@ address {
   position: relative;
   padding: 165px 50px 50px 50px;
   background-image: url(../images/cover.jpg);
-  background-position: left 0 top -17px;
+  background-position: left 0 top -18px;
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 0;
@@ -178,7 +177,6 @@ address {
 }
 
 .lots__card-list-item {
-  position: relative;
   flex: 1 1 430px;
   min-height: 450px;
 }
@@ -186,28 +184,24 @@ address {
 .card-link {
   display: block;
   height: 100%;
-  padding: 50px 40px;
+  width: 100%;
 }
 
 .card {
+  position: relative;
   display: flex;
   height: 100%;
-  width: 100;
+  width: 100%;
   flex-direction: column;
   justify-content: space-between;
+  padding: 50px 40px;
+  z-index: 0;
 }
 
-.card_type_film,
-.card_type_book,
-.card_type_picture {
-  position: absolute;
-  top: 0;
-  left: 0;
+.size_background-card_cover {
   background-size: cover;
   background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-  z-index: -2;
+  background-position: center;
 }
 
 .card_type_film {
