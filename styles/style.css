@@ -198,7 +198,7 @@ address {
   z-index: 0;
 }
 
-.size_background-card_cover {
+.size_background-cover {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
